@@ -34,6 +34,7 @@ jobs:
         uses: projectdiscovery/nuclei-action@main
         with:
           target: http://localhost:8080
+          output: json
 
       - name: Stop containers
         if: always()
